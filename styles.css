@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #af0ce0;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+ 
+}
+
+.editor-container {
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 80px; /* To account for the navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toolbar {
+    background-color: #af0ce0;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.toolbar button, .toolbar select, .toolbar input {
+    background: none;
+    border: none;
+    color: #000000;
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toolbar button:hover, .toolbar select:hover, .toolbar input:hover {
+    background-color: #070707;
+    color:rgb(255, 255, 255);
+}
+
+.toolbar button i {
+    pointer-events: none;
+}
+
+.editor {
+    padding: 20px;
+    min-height: 400px;
+    font-size: 16px;
+    line-height: 1.5;
+    outline: none;
+    width: 100%;
+}

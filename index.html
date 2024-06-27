@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Text Editor</title>
+    <!-- Cusotme CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+    <!--  Font Awsome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Text Editor by Zayyan Mustafa</h1>
+    </div>
+    <div class="editor-container">
+        <div class="toolbar">
+            <button id="boldBtn" title="Bold"><i class="fas fa-bold"></i></button>
+            <button id="italicBtn" title="Italic"><i class="fas fa-italic"></i></button>
+            <button id="underlineBtn" title="Underline"><i class="fas fa-underline"></i></button>
+            <select id="fontFamilySelector" title="Font Family">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            <select id="fontSizeSelector" title="Font Size">
+                <option value="1">8</option>
+                <option value="2">10</option>
+                <option value="3">12</option>
+                <option value="4">14</option>
+                <option value="5">18</option>
+                <option value="6">24</option>
+                <option value="7">36</option>
+            </select>
+            <input type="color" id="colorPicker" title="Text Color">
+        </div>
+        <div id="editor" contenteditable="true" class="editor"></div>
+    </div>
+    <!-- Cusotme JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
+
